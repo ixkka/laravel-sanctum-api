@@ -19,4 +19,7 @@ Route::middleware('auth:sanctum')->group(function () {
         'destroy'
     ]);
 
+    Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/login', [AuthController::class, 'login']);
+
 });
